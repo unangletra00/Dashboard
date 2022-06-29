@@ -341,6 +341,7 @@ table tr td > i:nth-child(3):hover{
         padding: 4rem 1rem 2rem 13rem;
     }
     .employee-header{
+        min-width: 685px;
         padding-right: 1rem;
     }
     #toggle:checked ~ main{
