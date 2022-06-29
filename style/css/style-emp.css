@@ -368,6 +368,9 @@ table tr td > i:nth-child(3):hover{
         max-width: 100%;
         padding: 4rem 2rem 2rem 2rem;
     }
+    .employee-header{
+        min-width: 685px;
+    }
     #toggle:checked ~ .sidebar{
         display: block;
         width: 200px;
@@ -404,6 +407,9 @@ table tr td > i:nth-child(3):hover{
         max-width: 100%;
         padding: 4rem 2rem 2rem 2rem;
     }
+    .employee-header{
+        min-width: 685px;
+    }
     #toggle:checked ~ .sidebar{
         display: block;
         width: 200px;
@@ -426,6 +432,9 @@ table tr td > i:nth-child(3):hover{
         font-size: 18px;
         text-transform: uppercase;
         font-weight: 900;
+    }
+    .employee-header{
+        min-width: 685px;
     }
     .employee .employee-header > p{
        max-width: 100%;
@@ -455,5 +464,8 @@ table tr td > i:nth-child(3):hover{
     }
     .profile .profile-image{
         margin: 1rem;
+    }
+    .employee-header{
+        min-width: 685px;
     }
 }
