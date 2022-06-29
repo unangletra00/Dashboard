@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style/css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+          $(".side-toggle").click(function(){
+            $(".text-menu").fadeOut("slow");
+          });
+        });
+    </script> -->
+</head>
+
+<body>
+    <nav class="navbar">
+        <h4>the masters</h4>
+        <div class="profile">
+            <span class="fas fa-search"></span>
+            <img src="assets/images/ivana.jpg" alt="user prifile" class="profile-image">
+            <p class="profile-name">ivana alawi</p>
+        </div>
+    </nav>
+
+    <input type="checkbox" id="toggle">
+    <label for="toggle" class="side-toggle">
+        <span class="fas fa-bars"></span>
+    </label>
+
+    <div class="sidebar">
+        <a href="index.html">
+            <div class="sidebar-menu">
+                <span class="fas fa-tachometer-alt"></span>
+                <p class="text-menu">Dashboard</p>
+            </div>
+        </a>
+        <a href="pages/employee.html">
+            <div class="sidebar-menu">
+                <span class="fas fa-users"></span>
+                <p class="text-menu">Employee</p>
+            </div>
+        </a>
+        <div class="sidebar-menu">
+            <span class="fas fa-network-wired"></span>
+            <p class="text-menu">Department</p>
+        </div>
+        <div class="sidebar-menu">
+            <span class="fas fa-sitemap"></span>
+            <p class="text-menu">Designation</p>
+        </div>
+        <div class="sidebar-menu">
+            <span class="fas fa-user-clock"></span>
+            <p class="text-menu">Attendance</p>
+        </div>
+        <div class="sidebar-menu">
+            <span class="fas fa-plane-departure"></span>
+            <p class="text-menu">Leave</p>
+        </div>
+        <div class="sidebar-menu">
+            <span class="fas fa-chart-pie"></span>
+            <p class="text-menu">&nbspReport</p>
+        </div>
+        <div class="sidebar-menu">
+            <span class="fas fa-bullhorn"></span>
+            <p class="text-menu">Announcement</p>
+        </div>
+        <div class="sidebar-menu">
+            <span class="fas fa-cogs"></span>
+            <p class="text-menu">Settings</p>
+        </div>
+    </div>
+
+    <main>
+        <div class="dashboard-container">
+            <div class="card total total1">
+                <div class="info">
+                    <div class="info-employee">
+                        <h5>Employee</h5>
+                        <h2>
+                            22
+                        </h2>
+                    </div>
+                    <div class="info-image">
+                        <i class="fas fa-users"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="card total total2">
+                <div class="info">
+                    <div class="info-employee">
+                        <h5>Employee</h5>
+                        <h2>
+                            22
+                        </h2>
+                    </div>
+                    <div class="info-image">
+                        <i class="fas fa-users"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="card total total3">
+                <div class="info">
+                    <div class="info-employee">
+                        <h5>Employee</h5>
+                        <h2>
+                            22
+                        </h2>
+                    </div>
+                    <div class="info-image">
+                        <i class="fas fa-users"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="card total total4">
+                <div class="info">
+                    <div class="info-employee">
+                        <h5>Employee</h5>
+                        <h2>
+                            22
+                        </h2>
+                    </div>
+                    <div class="info-image">
+                        <i class="fas fa-users"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card employee">
+                <div class="employee-header">
+                    <p>Employee List</p>
+                    <a href="pages/employee.html">
+                        <button>View All</button>
+                    </a>
+                </div>
+                <table>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Department</th>
+                        <th>Position</th>
+                    </tr>
+                    <tr>
+                        <td>001</td>
+                        <td>Master Chy</td>
+                        <td>Application Department</td>
+                        <td>IT Admin</td>
+                    </tr>
+                    <tr>
+                        <td>002</td>
+                        <td>Master Vitz</td>
+                        <td>Application Department</td>
+                        <td>Project Manager</td>
+                    </tr>
+                    <tr>
+                        <td>003</td>
+                        <td>Master Saki</td>
+                        <td>Application Department</td>
+                        <td>Website Developer</td>
+                    </tr>
+                    <tr>
+                        <td>004</td>
+                        <td>Master Bruce</td>
+                        <td>Application Department</td>
+                        <td>Website Developer</td>
+                    </tr>
+                    <tr>
+                        <td>005</td>
+                        <td>Sabihin Mo Master</td>
+                        <td>Application Department</td>
+                        <td>Website Developer</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="card new-employee">
+                <p>New Employee</p>
+                <div class="new-employee-wrapper">
+                    <img class="new-employee-image" src="assets/images/ivana.jpg" alt="client logo">
+                    <div class="new-employee-name">
+                        <p>Ivana Alawi</p>
+                    </div>
+                </div>
+                <div class="new-employee-wrapper">
+                    <img class="new-employee-image" src="assets/images/ivana.jpg" alt="client logo">
+                    <div class="new-employee-name">
+                        <p>Ivana Alawi</p>
+                    </div>
+                </div>
+                <div class="new-employee-wrapper">
+                    <img class="new-employee-image" src="assets/images/ivana.jpg" alt="client logo">
+                    <div class="new-employee-name">
+                        <p>Ivana Alawi</p>
+                    </div>
+                </div>
+                <div class="new-employee-wrapper">
+                    <img class="new-employee-image" src="assets/images/ivana.jpg" alt="client logo">
+                    <div class="new-employee-name">
+                        <p>Ivana Alawi</p>
+                    </div>
+                </div>
+                <div class="new-employee-wrapper">
+                    <img class="new-employee-image" src="assets/images/ivana.jpg" alt="client logo">
+                    <div class="new-employee-name">
+                        <p>Ivana Alawi</p>
+                    </div>
+                </div>
+                <div class="new-employee-wrapper">
+                    <img class="new-employee-image" src="assets/images/ivana.jpg" alt="client logo">
+                    <div class="new-employee-name">
+                        <p>Ivana Alawi</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card client">
+                <div class="client-header">
+                    <p>Client List</p>
+                    <button>View All</button>
+                </div>
+                <table>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Department</th>
+                        <th>Position</th>
+                    </tr>
+                    <tr>
+                        <td>001</td>
+                        <td>Master Chy</td>
+                        <td>Application Department</td>
+                        <td>IT Admin</td>
+                    </tr>
+                    <tr>
+                        <td>002</td>
+                        <td>Master Vitz</td>
+                        <td>Application Department</td>
+                        <td>Project Manager</td>
+                    </tr>
+                    <tr>
+                        <td>003</td>
+                        <td>Master Saki</td>
+                        <td>Application Department</td>
+                        <td>Website Developer</td>
+                    </tr>
+                    <tr>
+                        <td>004</td>
+                        <td>Master Bruce</td>
+                        <td>Application Department</td>
+                        <td>Website Developer</td>
+                    </tr>
+                    <tr>
+                        <td>005</td>
+                        <td>Sabihin Mo Master</td>
+                        <td>Application Department</td>
+                        <td>Website Developer</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="card customer">
+                <p>Recent Client</p>
+                <div class="customer-wrapper">
+                    <img class="customer-image" src="assets/images/ivana.jpg" alt="client logo">
+                    <div class="customer-name">
+                        <p>Ivana Alawi</p>
+                    </div>
+                </div>
+                <div class="customer-wrapper">
+                    <img class="customer-image" src="assets/images/ivana.jpg" alt="client logo">
+                    <div class="customer-name">
+                        <p>Ivana Alawi</p>
+                    </div>
+                </div>
+                <div class="customer-wrapper">
+                    <img class="customer-image" src="assets/images/ivana.jpg" alt="client logo">
+                    <div class="customer-name">
+                        <p>Ivana Alawi</p>
+                    </div>
+                </div>
+                <div class="customer-wrapper">
+                    <img class="customer-image" src="assets/images/ivana.jpg" alt="client logo">
+                    <div class="customer-name">
+                        <p>Ivana Alawi</p>
+                    </div>
+                </div>
+                <div class="customer-wrapper">
+                    <img class="customer-image" src="assets/images/ivana.jpg" alt="client logo">
+                    <div class="customer-name">
+                        <p>Ivana Alawi</p>
+                    </div>
+                </div>
+                <div class="customer-wrapper">
+                    <img class="customer-image" src="assets/images/ivana.jpg" alt="client logo">
+                    <div class="customer-name">
+                        <p>Ivana Alawi</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
