@@ -176,6 +176,7 @@ main{
     padding: 1rem 0 1rem 0;
     position: sticky;
     top: 0;
+    min-width: 685px;
 }
 
 .employee-header > p{
@@ -341,7 +342,7 @@ table tr td > i:nth-child(3):hover{
         padding: 4rem 1rem 2rem 13rem;
     }
     .employee-header{
-        min-width: 685px;
+        min-width: 100vw;
         padding-right: 1rem;
     }
     #toggle:checked ~ main{
@@ -369,7 +370,7 @@ table tr td > i:nth-child(3):hover{
         padding: 4rem 2rem 2rem 2rem;
     }
     .employee-header{
-        min-width: 685px;
+        min-width: 100vw;
     }
     #toggle:checked ~ .sidebar{
         display: block;
@@ -408,7 +409,7 @@ table tr td > i:nth-child(3):hover{
         padding: 4rem 2rem 2rem 2rem;
     }
     .employee-header{
-        min-width: 685px;
+        min-width: 100vw;
     }
     #toggle:checked ~ .sidebar{
         display: block;
@@ -434,7 +435,7 @@ table tr td > i:nth-child(3):hover{
         font-weight: 900;
     }
     .employee-header{
-        min-width: 685px;
+        min-width: 100vw;
     }
     .employee .employee-header > p{
        max-width: 100%;
@@ -466,6 +467,6 @@ table tr td > i:nth-child(3):hover{
         margin: 1rem;
     }
     .employee-header{
-        min-width: 685px;
+        min-width: 100vw;
     }
 }
