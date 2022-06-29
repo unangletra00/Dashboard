@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="../style/css/style-emp.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../style/css/modal.css">
+    <link rel="stylesheet" href="../style/css/form.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.min.css'>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+          $(".side-toggle").click(function(){
+            $(".text-menu").fadeOut("slow");
+          });
+        });
+    </script> -->
+    <!-- <script type="text/javascript">
+        function adjust_textarea(h) {
+            h.style.height = "20px";
+            h.style.height = (h.scrollHeight)+"px";
+        }
+    </script> -->
+</head>
+
+<body>
+    <nav class="navbar">
+        <h4>the masters</h4>
+        <div class="profile">
+            <span class="fas fa-search"></span>
+            <img src="../assets/images/ivana.jpg" alt="user prifile" class="profile-image">
+            <p class="profile-name">ivana alawi</p>
+        </div>
+    </nav>
+
+    <input type="checkbox" id="toggle">
+    <label for="toggle" class="side-toggle">
+        <span class="fas fa-bars"></span>
+    </label>
+
+    <div class="sidebar">
+        <a href="../index.html">
+            <div class="sidebar-menu">
+                <span class="fas fa-tachometer-alt"></span>
+                <p class="text-menu">Dashboard</p>
+            </div>
+        </a>
+        <a href="employee.html">
+            <div class="sidebar-menu">
+                <span class="fas fa-users"></span>
+                <p class="text-menu">Employee</p>
+            </div>
+        </a>
+        <div class="sidebar-menu">
+            <span class="fas fa-network-wired"></span>
+            <p class="text-menu">Department</p>
+        </div>
+        <div class="sidebar-menu">
+            <span class="fas fa-sitemap"></span>
+            <p class="text-menu">Designation</p>
+        </div>
+        <div class="sidebar-menu">
+            <span class="fas fa-user-clock"></span>
+            <p class="text-menu">Attendance</p>
+        </div>
+        <div class="sidebar-menu">
+            <span class="fas fa-plane-departure"></span>
+            <p class="text-menu">Leave</p>
+        </div>
+        <div class="sidebar-menu">
+            <span class="fas fa-chart-pie"></span>
+            <p class="text-menu">&nbspReport</p>
+        </div>
+        <div class="sidebar-menu">
+            <span class="fas fa-bullhorn"></span>
+            <p class="text-menu">Announcement</p>
+        </div>
+        <div class="sidebar-menu">
+            <span class="fas fa-cogs"></span>
+            <p class="text-menu">Settings</p>
+        </div>
+    </div>
+
+    <main>
+        <div class="dashboard-container">
+            <div class="card employee">
+                <div class="employee-header">
+                    <p>Employee List</p>
+                    <button id="btn" onclick="document.getElementById('modal').style.display='block'">Add New</button>
+                </div>
+                <table>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Department</th>
+                        <th>Position</th>
+                        <th>Action</th>
+                    </tr>
+                    <tr>
+                        <td>001</td>
+                        <td>Master Chy</td>
+                        <td>Application Department</td>
+                        <td>IT Admin</td>
+                        <td>
+                            <i class="fa fa-eye try"></i>
+                            <i class="fa fa-edit"
+                                onclick="document.getElementById('modal-edit').style.display='block'">
+                            </i>
+                            <i class="fa fa-trash"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>002</td>
+                        <td>Master Vitz</td>
+                        <td>Application Department</td>
+                        <td>Project Manager</td>
+                        <td>
+                            <i class="fa fa-eye"></i>
+                            <i class="fa fa-edit"></i>
+                            <i class="fa fa-trash"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>003</td>
+                        <td>Master Saki</td>
+                        <td>Application Department</td>
+                        <td>Website Developer</td>
+                        <td>
+                            <i class="fa fa-eye"></i>
+                            <i class="fa fa-edit"></i>
+                            <i class="fa fa-trash"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>004</td>
+                        <td>Master Bruce</td>
+                        <td>Application Department</td>
+                        <td>Website Developer</td>
+                        <td>
+                            <i class="fa fa-eye"></i>
+                            <i class="fa fa-edit"></i>
+                            <i class="fa fa-trash"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>005</td>
+                        <td>Sabihin Mo Master</td>
+                        <td>Application Department</td>
+                        <td>Website Developer</td>
+                        <td>
+                            <i class="fa fa-eye"></i>
+                            <i class="fa fa-edit"></i>
+                            <i class="fa fa-trash"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>001</td>
+                        <td>Master Chy</td>
+                        <td>Application Department</td>
+                        <td>IT Admin</td>
+                        <td>
+                            <i class="fa fa-eye"></i>
+                            <i class="fa fa-edit"></i>
+                            <i class="fa fa-trash"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>002</td>
+                        <td>Master Vitz</td>
+                        <td>Application Department</td>
+                        <td>Project Manager</td>
+                        <td>
+                            <i class="fa fa-eye"></i>
+                            <i class="fa fa-edit"></i>
+                            <i class="fa fa-trash"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>003</td>
+                        <td>Master Saki</td>
+                        <td>Application Department</td>
+                        <td>Website Developer</td>
+                        <td>
+                            <i class="fa fa-eye"></i>
+                            <i class="fa fa-edit"></i>
+                            <i class="fa fa-trash"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>004</td>
+                        <td>Master Bruce</td>
+                        <td>Application Department</td>
+                        <td>Website Developer</td>
+                        <td>
+                            <i class="fa fa-eye"></i>
+                            <i class="fa fa-edit"></i>
+                            <i class="fa fa-trash"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>005</td>
+                        <td>Sabihin Mo Master</td>
+                        <td>Application Department</td>
+                        <td>Website Developer</td>
+                        <td>
+                            <i class="fa fa-eye"></i>
+                            <i class="fa fa-edit"></i>
+                            <i class="fa fa-trash"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>001</td>
+                        <td>Master Chy</td>
+                        <td>Application Department</td>
+                        <td>IT Admin</td>
+                        <td>
+                            <i class="fa fa-eye"></i>
+                            <i class="fa fa-edit"></i>
+                            <i class="fa fa-trash"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>002</td>
+                        <td>Master Vitz</td>
+                        <td>Application Department</td>
+                        <td>Project Manager</td>
+                        <td>
+                            <i class="fa fa-eye"></i>
+                            <i class="fa fa-edit"></i>
+                            <i class="fa fa-trash"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>003</td>
+                        <td>Master Saki</td>
+                        <td>Application Department</td>
+                        <td>Website Developer</td>
+                        <td>
+                            <i class="fa fa-eye"></i>
+                            <i class="fa fa-edit"></i>
+                            <i class="fa fa-trash"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>004</td>
+                        <td>Master Bruce</td>
+                        <td>Application Department</td>
+                        <td>Website Developer</td>
+                        <td>
+                            <i class="fa fa-eye"></i>
+                            <i class="fa fa-edit"></i>
+                            <i class="fa fa-trash"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>005</td>
+                        <td>Sabihin Mo Master</td>
+                        <td>Application Department</td>
+                        <td>Website Developer</td>
+                        <td>
+                            <i class="fa fa-eye"></i>
+                            <i class="fa fa-edit"></i>
+                            <i class="fa fa-trash"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>001</td>
+                        <td>Master Chy</td>
+                        <td>Application Department</td>
+                        <td>IT Admin</td>
+                        <td>
+                            <i class="fa fa-eye"></i>
+                            <i class="fa fa-edit"></i>
+                            <i class="fa fa-trash"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>002</td>
+                        <td>Master Vitz</td>
+                        <td>Application Department</td>
+                        <td>Project Manager</td>
+                        <td>
+                            <i class="fa fa-eye"></i>
+                            <i class="fa fa-edit"></i>
+                            <i class="fa fa-trash"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>003</td>
+                        <td>Master Saki</td>
+                        <td>Application Department</td>
+                        <td>Website Developer</td>
+                        <td>
+                            <i class="fa fa-eye"></i>
+                            <i class="fa fa-edit"></i>
+                            <i class="fa fa-trash"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>004</td>
+                        <td>Master Bruce</td>
+                        <td>Application Department</td>
+                        <td>Website Developer</td>
+                        <td>
+                            <i class="fa fa-eye"></i>
+                            <i class="fa fa-edit"></i>
+                            <i class="fa fa-trash"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>005</td>
+                        <td>Sabihin Mo Master</td>
+                        <td>Application Department</td>
+                        <td>Website Developer</td>
+                        <td>
+                            <i class="fa fa-eye"></i>
+                            <i class="fa fa-edit"></i>
+                            <i class="fa fa-trash"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>001</td>
+                        <td>Master Chy</td>
+                        <td>Application Department</td>
+                        <td>IT Admin</td>
+                        <td>
+                            <i class="fa fa-eye"></i>
+                            <i class="fa fa-edit"></i>
+                            <i class="fa fa-trash"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>002</td>
+                        <td>Master Vitz</td>
+                        <td>Application Department</td>
+                        <td>Project Manager</td>
+                        <td>
+                            <i class="fa fa-eye"></i>
+                            <i class="fa fa-edit"></i>
+                            <i class="fa fa-trash"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>003</td>
+                        <td>Master Saki</td>
+                        <td>Application Department</td>
+                        <td>Website Developer</td>
+                        <td>
+                            <i class="fa fa-eye"></i>
+                            <i class="fa fa-edit"></i>
+                            <i class="fa fa-trash"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>004</td>
+                        <td>Master Bruce</td>
+                        <td>Application Department</td>
+                        <td>Website Developer</td>
+                        <td>
+                            <i class="fa fa-eye"></i>
+                            <i class="fa fa-edit"></i>
+                            <i class="fa fa-trash"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>005</td>
+                        <td>Sabihin Mo Master</td>
+                        <td>Application Department</td>
+                        <td>Website Developer</td>
+                        <td>
+                            <i class="fa fa-eye"></i>
+                            <i class="fa fa-edit"></i>
+                            <i class="fa fa-trash"></i>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div id="modal" class="add-new-modal">
+            <div class="add-new-modal-content add-new-animate-top add-new-card-4">
+                <header class="add-new-container add-new-heading">
+                    <span onclick="document.getElementById('modal').style.display='none'"
+                        class="add-new-button add-new-display-topright">&times;</span>
+                    <p>Add new employee</p>
+                </header>
+                <div class="add-new-container">
+                    <form class="form-employee">
+                        <ul>
+                            <li>
+                                <span class="first-name">
+                                    <label for="first_name">First Name</label>
+                                    <input type="text" name="name" maxlength="50">
+                                </span>
+                                <span class="last-name">
+                                    <label for="last_name">Last Name</label>
+                                    <input type="text" name="last_name" maxlength="50">
+                                </span>
+                            </li>
+                            <li>
+                                <span class="number">
+                                    <label for="number">Contact Number</label>
+                                    <input type="text" name="number" maxlength="15" pattern="^\d*(\.\d{0,2})?$">
+                                </span>
+                                <span class="email">
+                                    <label for="email">E-mail Address</label>
+                                    <input type="email" name="email" maxlength="100"
+                                        pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$">
+                                </span>
+                            </li>
+                            <li>
+                                <span>
+                                    <label for="department">Department</label>
+                                    <select name="department" id="department">
+                                        <option value=""></option>
+                                        <option value="Department 1">Department 1</option>
+                                        <option value="Department 2">Department 2</option>
+                                        <option value="Department 3">Department 3</option>
+                                    </select>
+                                </span>
+                            </li>
+                            <li>
+                                <span>
+                                    <label for="role">Role</label>
+                                    <select name="role" id="role">
+                                        <option value=""></option>
+                                        <option value="Role 1">Role 1</option>
+                                        <option value="Role 2">Role 2</option>
+                                        <option value="Role 3">Role 3</option>
+                                    </select>
+                                </span>
+                            </li>
+                            <li>
+                                <span>
+                                    <label for="description">Job Description</label>
+                                    <textarea name="description" onkeyup="adjust_textarea(this)"></textarea>
+                                </span>
+                            </li>
+                            <li>
+                                <div class="spacer">
+                                    <div class="spacers"></div>
+                                    <div class="submit-button">
+                                        <input type="submit" value="Save">
+                                    </div>
+
+                                </div>
+                            </li>
+                        </ul>
+                    </form>
+                </div>
+                <footer class="add-new-container add-new-footer">
+                    <p>The Masters</p>
+                </footer>
+            </div>
+        </div>
+
+        <div id="modal-edit" class="add-new-modal">
+            <div class="add-new-modal-content add-new-animate-top add-new-card-4">
+                <header class="add-new-container add-new-heading">
+                    <span onclick="document.getElementById('modal-edit').style.display='none'"
+                        class="add-new-button add-new-display-topright">&times;</span>
+                    <p>Edit employee information</p>
+                </header>
+                <div class="add-new-container">
+                    <form class="form-employee">
+                        <ul>
+                            <li>
+                                <span class="first-name">
+                                    <label for="first_name">First Name</label>
+                                    <input type="text" name="name" maxlength="50">
+                                </span>
+                                <span class="last-name">
+                                    <label for="last_name">Last Name</label>
+                                    <input type="text" name="last_name" maxlength="50">
+                                </span>
+                            </li>
+                            <li>
+                                <span class="number">
+                                    <label for="number">Contact Number</label>
+                                    <input type="text" name="number" maxlength="15" pattern="^\d*(\.\d{0,2})?$">
+                                </span>
+                                <span class="email">
+                                    <label for="email">E-mail Address</label>
+                                    <input type="email" name="email" maxlength="100"
+                                        pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$">
+                                </span>
+                            </li>
+                            <li>
+                                <span>
+                                    <label for="department">Department</label>
+                                    <select name="department" id="department">
+                                        <option value=""></option>
+                                        <option value="Department 1">Department 1</option>
+                                        <option value="Department 2">Department 2</option>
+                                        <option value="Department 3">Department 3</option>
+                                    </select>
+                                </span>
+                            </li>
+                            <li>
+                                <span>
+                                    <label for="role">Role</label>
+                                    <select name="role" id="role">
+                                        <option value=""></option>
+                                        <option value="Role 1">Role 1</option>
+                                        <option value="Role 2">Role 2</option>
+                                        <option value="Role 3">Role 3</option>
+                                    </select>
+                                </span>
+                            </li>
+                            <li>
+                                <span>
+                                    <label for="description">Job Description</label>
+                                    <textarea name="description" onkeyup="adjust_textarea(this)"></textarea>
+                                </span>
+                            </li>
+                            <li>
+                                <div class="spacer">
+                                    <div class="spacers"></div>
+                                    <div class="submit-button">
+                                        <input type="submit" value="Update">
+                                    </div>
+
+                                </div>
+                            </li>
+                        </ul>
+                    </form>
+                </div>
+                <footer class="add-new-container add-new-footer">
+                    <p>The Masters</p>
+                </footer>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
